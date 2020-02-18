@@ -1,0 +1,23 @@
+{
+  "name": "semrel",
+  "version": "0.0.0-development",
+  "description": "Semantic releasing lab",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisallenlane/semrel.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-release-cli": "^5.2.3",
+    "semantic-release": "^17.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
