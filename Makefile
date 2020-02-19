@@ -12,6 +12,7 @@ GREP   := grep
 GZIP   := gzip --best
 LINT   := revive
 MKDIR  := mkdir -p
+NPX    := npx
 RM     := rm
 SCC    := scc
 SED    := sed
@@ -27,9 +28,6 @@ TMPDIR       := /tmp
 releases :=                        \
 	$(dist_dir)/semrel-darwin-amd64 \
 	$(dist_dir)/semrel-linux-amd64  \
-	$(dist_dir)/semrel-linux-arm5   \
-	$(dist_dir)/semrel-linux-arm6   \
-	$(dist_dir)/semrel-linux-arm7   \
 	$(dist_dir)/semrel-windows-amd64.exe
 
 ## build: builds an executable for your architecture
@@ -150,6 +148,10 @@ check: | vendor fmt lint vet test
 
 .PHONY: prepare
 prepare: | $(dist_dir) clean generate vendor fmt lint vet test
+
+.PHONY: release
+release: build-release
+	$(NPX) semantic-release --dryrun
 
 ## help: displays this help text
 .PHONY: help

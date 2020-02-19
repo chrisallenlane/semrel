@@ -4,7 +4,7 @@
   "description": "Semantic releasing lab",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrisallenlane/semrel.git"
+    "url": "git@github.com:chrisallenlane/semrel.git"
   },
   "dependencies": {},
   "devDependencies": {
