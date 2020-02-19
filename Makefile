@@ -151,7 +151,7 @@ prepare: | $(dist_dir) clean generate vendor fmt lint vet test
 
 .PHONY: release
 release: build-release
-	$(NPX) semantic-release --dryrun
+	$(NPX) semantic-release
 
 ## help: displays this help text
 .PHONY: help
