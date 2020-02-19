@@ -4,5 +4,5 @@ import "fmt"
 
 func main() {
 
-	fmt.Println("Hello, semantic releases!")
+	fmt.Println("Hello, world of semantic releases!")
 }
